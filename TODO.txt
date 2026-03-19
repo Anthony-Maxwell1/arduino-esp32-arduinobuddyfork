@@ -1,0 +1,12 @@
+cores/esp32 is of no concern - these get bundled when building for esp32.
+libraries/ is of no concern for the same reason.
+
+
+docs/, .github and .gitlab are also of no concern, as they contain no relative executables (however CI/CD could be set up in .github)
+
+We can just get rid of tests/, at this early stage we don't need testing.
+tools/ is what we care about.
+
+variants/ call functions that we are already going to replace.
+
+package/ contains the actual executables, which we care about.

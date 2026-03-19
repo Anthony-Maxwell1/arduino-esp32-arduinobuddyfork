@@ -456,19 +456,7 @@ def identify_platform():
         "LinuxARM": {32: "arm-linux-gnueabihf", 64: "aarch64-linux-gnu"},
         "Windows": {32: "i686-mingw32", 64: "x86_64-mingw32"},
     }
-    bits = 32
-    if sys.maxsize > 2**32:
-        bits = 64
-    sys_name = platform.system()
-    sys_platform = platform.platform()
-    if "Darwin" in sys_name and (sys_platform.find("arm") > 0 or sys_platform.find("arm64") > 0):
-        sys_name = "DarwinARM"
-    if "Linux" in sys_name and (sys_platform.find("arm") > 0 or sys_platform.find("aarch64") > 0):
-        sys_name = "LinuxARM"
-    if "CYGWIN_NT" in sys_name:
-        sys_name = "Windows"
-    print("System: %s, Bits: %d, Info: %s" % (sys_name, bits, sys_platform))
-    return arduino_platform_names[sys_name][bits]
+    return arduino_platform_names["LinuxARM"][64]
 
 
 if __name__ == "__main__":
