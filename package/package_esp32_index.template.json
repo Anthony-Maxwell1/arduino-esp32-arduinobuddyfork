@@ -63,33 +63,13 @@
             },
             {
               "packager": "esp32",
-              "name": "xtensa-esp-elf-gdb",
-              "version": "16.3_20250913"
-            },
-            {
-              "packager": "esp32",
               "name": "riscv32-esp-elf-gcc",
               "version": "esp-14.2.0_20251107"
             },
             {
               "packager": "esp32",
-              "name": "riscv32-esp-elf-gdb",
-              "version": "16.3_20250913"
-            },
-            {
-              "packager": "esp32",
-              "name": "openocd-esp32",
-              "version": "v0.12.0-esp32-20251215"
-            },
-            {
-              "packager": "esp32",
               "name": "esptool_py",
               "version": "5.1.0"
-            },
-            {
-              "packager": "esp32",
-              "name": "mkspiffs",
-              "version": "0.2.3"
             },
             {
               "packager": "esp32",
@@ -145,19 +125,6 @@
           ]
         },
         {
-          "name": "riscv32-esp-elf-gdb",
-          "version": "16.3_20250913",
-          "systems": [
-            {
-              "host": "aarch64-linux-gnu",
-              "url": "https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v16.3_20250913/riscv32-esp-elf-gdb-16.3_20250913-aarch64-linux-gnu.tar.gz",
-              "archiveFileName": "riscv32-esp-elf-gdb-16.3_20250913-aarch64-linux-gnu.tar.gz",
-              "checksum": "SHA-256:8f1f4f24fa534c76ed9d71efffbf728cc30169e911742d7bd67dd0fdcf5f3ae3",
-              "size": "35664185"
-            }
-          ]
-        },
-        {
           "version": "4.0.2-db0513a",
           "name": "mklittlefs",
           "systems": [
@@ -167,6 +134,19 @@
               "archiveFileName": "aarch64-linux-gnu-mklittlefs-db0513a.tar.gz",
               "checksum": "SHA-256:281e951ccaf9f637142198bde1ca97be9c330a5ad3b15e9096016a521d459341",
               "size": "52890"
+            }
+          ]
+        },
+        {
+          "name": "esptool_py",
+          "version": "5.1.0",
+          "systems": [
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/espressif/esptool/releases/download/v5.1.0/esptool-v5.1.0-linux-aarch64.tar.gz",
+              "archiveFileName": "esptool-v5.1.0-linux-aarch64.tar.gz",
+              "checksum": "SHA-256:d2b60d4570cd4919b87eddcbeaab2e0411548b5aab865c234aed8ecc8e5403ac",
+              "size": "56292242"
             }
           ]
         }
